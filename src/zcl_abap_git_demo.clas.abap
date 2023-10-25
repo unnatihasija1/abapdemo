@@ -4,11 +4,15 @@ CLASS zcl_abap_git_demo DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
+  INTERFACES if_oo_adt_classrun.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS zcl_abap_git_demo IMPLEMENTATION.
+CLASS ZCL_ABAP_GIT_DEMO IMPLEMENTATION.
+METHOD if_oo_adt_classrun~main.
+out->write( 'Hello world!' ).
+ENDMETHOD.
 ENDCLASS.
